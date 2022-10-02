@@ -13,7 +13,7 @@ class Employee:
 
 
     def get_pay(self):
-        return self.monthlySal + self.hourlySal * self.workingHours + self.contractCommission * self.contractNum + self.bonusCommision
+        return self.monthlySal + self.hourlySal * self.workingHours + self.bonusCommision + self.contractCommission * self.contractNum
 
     def __str__(self):
         str = f"{self.name} works on a "
@@ -22,7 +22,7 @@ class Employee:
         else:
             str += f"contract of {self.workingHours} hours at {self.hourlySal}/hour"
 
-        if self.bunosCommison != 0:
+        if self.bonusCommision != 0:
             str += f" and receives a bonus commission of {self.bonusCommison}"
         elif self.contractCommission != 0:
             str += f" and receives a commission for {self.contractNum} contract(s) at {self.contractCommission}/contract"
