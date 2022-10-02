@@ -2,11 +2,18 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 class Employee:
-    def __init__(self, name):
+    def __init__(self, name, monthlySal, hourlySal, workingHours, contractCommission, contractNum, bounsCommission):
         self.name = name
+        self.monthlySal = monthlySal
+        self.hourlySal = hourlySal
+        self.workingHours = workingHours
+        self.contractCommission = contractCommission
+        self.contractNum = contractNum
+        self.bounsCommison = bounsCommission
+
 
     def get_pay(self):
-        pass
+        return self.monthlySal + self.hourlySal * self.workingHours + self.contractCommission * self.contractNum + self.bounsCommison
 
     def __str__(self):
         return self.name
