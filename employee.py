@@ -23,7 +23,7 @@ class Employee:
             str += f"contract of {self.workingHours} hours at {self.hourlySal}/hour"
 
         if self.bonusCommision != 0:
-            str += f" and receives a bonus commission of {self.bonusCommison}"
+            str += f" and receives a bonus commission of {self.bonusCommision}"
         elif self.contractCommission != 0:
             str += f" and receives a commission for {self.contractNum} contract(s) at {self.contractCommission}/contract"
 
