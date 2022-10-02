@@ -17,15 +17,15 @@ class Employee:
 
     def __str__(self):
         str = f"{self.name} works on a "
-        if self.monthlyContract != 0:
-            str += f"monthly salary of {self.monthlyContract}"
+        if self.monthlySal != 0:
+            str += f"monthly salary of {self.monthlySal}"
         else:
-            str += f"contract of {self.hour} hours at {self.hourlyContract}/hour"
+            str += f"contract of {self.workingHours} hours at {self.hourlySal}/hour"
 
         if self.bonusCommission != 0:
-            str += f" and receives a bonus commission of {self.bonusCommission}"
+            str += f" and receives a bonus commission of {self.bounsCommison}"
         elif self.contractCommission != 0:
-            str += f" and receives a commission for {self.contractNumber} contract(s) at {self.contractCommission}/contract"
+            str += f" and receives a commission for {self.contractNum} contract(s) at {self.contractCommission}/contract"
 
         str += f".  Their total pay is {self.get_pay()}."
 
