@@ -42,7 +42,7 @@ charlie = Employee('Charlie', 0, 25, 100, 0, 0, 0)
 renee = Employee('Renee', 3000, 0, 0, 0, 200, 4)
 
 # Jan works on a contract of 150 hours at 25/hour and receives a commission for 3 contract(s) at 220/contract.  Their total pay is 4410.
-jan = Employee('Jan', 0, 25, 100, 0, 220, 3)
+jan = Employee('Jan', 0, 25, 150, 0, 220, 3)
 
 # Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500.  Their total pay is 3500.
 robbie = Employee('Robbie', 2000, 0, 0, 1500, 0, 0)
